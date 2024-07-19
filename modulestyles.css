@@ -1,0 +1,70 @@
+/* General styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit;       /* Inherit color from parent */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #0e254f;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.module {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.module img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #0e254f;
+}
+
+.module h2 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color:  #0e254f;
+}
+
+.module p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+
