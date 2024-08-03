@@ -1,120 +1,88 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #002366; /* Dark navy blue background */
-    color: #ffffff; /* White text for contrast */
+    background: url('./assets/images/about-us-banner-img.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
-header {
-    background-color: #002366; /* Matching dark navy blue */
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-nav {
-    background-color: #003366; /* Slightly lighter navy blue for differentiation */
-    overflow: hidden;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #ffffff; /* White text for navigation links */
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #004080; /* Lighter navy blue on hover */
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    background-color: #ffffff; /* White background for sections */
-    color: #000000; /* Black text for readability */
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
+.login-box {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    display: block;
-    margin-top: 1rem;
-    color: #002366; /* Dark navy blue text for labels */
+.login-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-form input, form textarea, form button {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+.login-box h2 {
+    color: #ff5733;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.login-box .logo {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 14px;
 }
 
-form input, form textarea {
-    border: 1px solid #004080; /* Light navy blue border for inputs */
-}
-
-form button {
-    background-color: #004080; /* Matching button color */
-    color: #ffffff;
+button {
+    background-color: #00a2d1;
+    color: white;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    width: 90%;
+    margin-bottom: 15px; /* Space between buttons */
 }
 
-form button:hover {
-    background-color: #003366; /* Darker navy blue on hover */
+button:hover {
+    background-color: #007ba7;
 }
 
-#assignment-list {
-    list-style: none;
-    padding: 0;
-}
-
-#assignment-list li {
-    padding: 0.5rem;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#assignment-list li button {
-    background-color: #ff3333; /* Red color for remove button */
-    color: #ffffff;
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007ba7; /* Adjust color as needed */
     border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-}
-
-#assignment-list li button:hover {
-    background-color: #cc0000; /* Darker red on hover */
-}
-
-footer {
-    background-color: #333333; /* Dark gray for footer */
-    color: #ffffff;
+    border-radius: 5px;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    cursor: pointer;
+    text-decoration: none; 
+    width: 80%;
+
+   
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Adjust hover color as needed */
 }

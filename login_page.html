@@ -14,18 +14,30 @@
             <h2>COE - DEPARTMENT PORTAL</h2>
             <form>
                 <div class="input-group">
-                    <input type="text" id="department-name" placeholder="Department Name">
+                    <input type="text" id="department-name" placeholder="Department Name" required >
+                    <ul id="department-list" class="hidden">
+                        <li onclick="selectDepartment('MECH')">Mechanical</li>
+                        <li onclick="selectDepartment('ECE')">ECE</li>
+                        <li onclick="selectDepartment('EEE')">EEE</li>
+                        <li onclick="selectDepartment('IT')">IT</li>
+                        <li onclick="selectDepartment('CSE')">CSE</li>
+                        <li onclick="selectDepartment('CCE')">CCE</li>
+                        <li onclick="selectDepartment('AIML')">AIML</li>
+                    </ul>
                 </div>
                 <div class="input-group">
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password" required>
                 </div>
-                <button type="submit">Sign In</button>
-            </form>
+                <button type="button" onclick="window.location.href='./module.html'" >Sign In</button>
+
+                
+                <a href="./index.html" class="back-button">Back</a> Back button link -->
+            <!-- </form>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="main.js"></script>
 </body>
-</html> -->
+</html> --> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,20 +52,27 @@
             <h1>Welcome to<br>Panimalar Engineering College</h1>
             <img src="./assets/images/logo.jpg" alt="Panimalar College Logo" class="logo">
             <h2>COE - DEPARTMENT PORTAL</h2>
-            <form>
+            <form id="login-form">
                 <div class="input-group">
-                    <input type="text" id="department-name" placeholder="Department Name">
+                    <input type="text" id="department-name" placeholder="Department Name" required>
+                    <ul id="department-list" class="hidden">
+                        <li onclick="selectDepartment('MECH')">Mechanical</li>
+                        <li onclick="selectDepartment('ECE')">ECE</li>
+                        <li onclick="selectDepartment('EEE')">EEE</li>
+                        <li onclick="selectDepartment('IT')">IT</li>
+                        <li onclick="selectDepartment('CSE')">CSE</li>
+                        <li onclick="selectDepartment('CCE')">CCE</li>
+                        <li onclick="selectDepartment('AIML')">AIML</li>
+                    </ul>
                 </div>
                 <div class="input-group">
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password" required>
                 </div>
-                <button type="button" onclick="window.location.href='./module.html'">Sign In</button>
-
-                
-                <a href="./index.html" class="back-button">Back</a> <!-- Back button link -->
+                <button type="submit" value="Submit" >Sign In</button>
+                <a href="./index.html" class="back-button">Back</a>
             </form>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
