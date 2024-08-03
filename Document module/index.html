@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Module</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Document Module</h1>
+    </header>
+    <main class="container">
+        <!-- Study Material Upload Section -->
+        <section class="upload-section">
+            <h2>Upload Study Material</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="file">Choose file:</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="date" id="expiry-date" name="expiry-date" required>
+                </div>
+                <button type="submit">Upload</button>
+                <div id="upload-message" class="hidden"></div>
+            </form>
+        </section>
+        
+        <!-- Video Gallery Section -->
+        <section class="video-gallery">
+            <h2>Video Gallery</h2>
+            <div id="video-container">
+                <!-- Video elements will be added here by JavaScript -->
+            </div>
+            <button id="load-more">Load More Videos</button>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
