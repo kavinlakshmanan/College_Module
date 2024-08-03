@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Module</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment Section</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="#analysis">Analysis and Reports</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="assignments">
+            <h2>Assignments</h2>
+            <form id="assignment-form">
+                <label for="title">Assignment Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="due-date" required>
+                
+                <button type="submit">Add Assignment</button>
+            </form>
+            
+            <h3>Current Assignments</h3>
+            <ul id="assignment-list"></ul>
+        </section>
+        
+        <section id="analysis">
+            <h2>Analysis and Reports</h2>
+            <div id="report">
+                <!-- Analysis and report content will go here -->
+            </div>
+        </section>
+    </main>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
