@@ -4,7 +4,7 @@
 
 Welcome to the **Academic Module Management System**! This project provides a streamlined way to manage various academic modules, including Assignments, Examinations, Documents, Communication, and Surveys. Each module is designed to be independent yet can be integrated to form a comprehensive academic management system.
 
-**[Live Link of Project ](https://kavinlakshmanan.github.io/College_Module/)**
+**[Live Link of Project ](https://kavinlakshmanan.github.io/PEC_DEPARTMENT_PORTAL/)**
 
 
 ## Table of Contents
